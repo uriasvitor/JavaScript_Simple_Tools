@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 800PX;
+    background-color:#aaa;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#area{
+    font-size: 30px;
+    height: 200px;
+    width: 600px;
+}
+
+p{
+    font-size: 54px;
+    color: rgb(0, 255, 0);
+}

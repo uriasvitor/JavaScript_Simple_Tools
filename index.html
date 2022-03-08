@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h2>JavaScript Simple Tools</h2>
+              <label for="Type">Show Type</label>
+              <input type="checkbox" id="Type" name="type"><br>
+
+              <label for="Length">Show Length</label>
+              <input type="checkbox" id="Length" value="true" ame="Length" onclick="ShowLength()"><br>
+
+              <label for="Color">Show Color</label>
+              <input type="checkbox" value="true" id="Color" name="Color"><br>
+
+              <label for="Code">Show Code</label>
+              <input type="checkbox" id="Code" name="Code"><br>
+
+              <label for="Code">Show Split</label>
+              <input type="checkbox" id="Code" name="Code"><br>
+
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h2>Write Here</h2>
+              <input type="text" id="area">
+            </div>
+            <div class="column" style="background-color:#ccc;">
+              <h2>Result</h2>
+              <div class="column" style="background-color:rgb(0, 0, 0); height:200px; width: 600px;">
+                <p id="results">WORKS!</p>
+              </div>
+              
+            </div>
+          </div>
+          
+    </form>
+</body>
+<script src="scripts.js"></script>
+
+</html>
