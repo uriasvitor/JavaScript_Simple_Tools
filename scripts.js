@@ -18,11 +18,13 @@ function ShowLength(){
 
 document.getElementById('ColorBoxInput').addEventListener("input",ShowColor);
 document.getElementById('ColorBoxInput').disabled = true;
+document.getElementById('ColorBoxInput').hidden = true;
 
 function ShowColor(){
      let turn = document.getElementById('Color');
     
     if(turn.checked){
+        document.getElementById('ColorBoxInput').hidden = false;
         document.getElementById('ColorBoxInput').disabled = false;
         let colorInput = document.getElementById('ColorBoxInput').value
         document.getElementById('area').style.color = colorInput;
@@ -30,6 +32,7 @@ function ShowColor(){
         document.getElementById('ColorBoxInput').style.backgroundColor = "#6d008f";
 
     }else{
+        document.getElementById('ColorBoxInput').hidden = true;
         document.getElementById('ColorBoxInput').disabled = true;
         document.getElementById('ColorBoxInput').value = '';
         document.getElementById('ColorBoxInput').style.backgroundColor = "#919191";
