@@ -48,3 +48,27 @@ function ShowCode(){
     }
 
 }
+
+document.getElementById('SplitInput').hidden = true;
+document.getElementById('SplitInput1').hidden = true;
+document.getElementById('SplitInput').addEventListener("input",ShowSplit);
+
+function ShowSplit(){
+
+    let turn = document.getElementById('Split');
+
+    if(turn.checked){
+        let areaValue = document.getElementById('area').value;
+        let SplitInputValue = document.getElementById('SplitInput').value;
+        let SplitInput1Value = document.getElementById('SplitInput1').value;
+
+        Split = areaValue.slice(SplitInputValue,SplitInput1Value)
+
+        document.getElementById('results').innerHTML = Split;
+        document.getElementById('SplitInput').hidden = false;
+        document.getElementById('SplitInput1').hidden = false;
+    }else{
+        document.getElementById('SplitInput1').hidden = true;
+        document.getElementById('SplitInput').hidden = true;
+    }
+}
