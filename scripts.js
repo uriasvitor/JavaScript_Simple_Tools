@@ -35,3 +35,16 @@ function ShowColor(){
         document.getElementById('ColorBoxInput').style.backgroundColor = "#919191";
     }
 }
+
+document.getElementById('codeText').hidden = true;
+
+function ShowCode(){
+    let turn = document.getElementById('Code');
+
+    if(turn.checked){
+        document.getElementById('codeText').hidden = false;
+    }else{
+        document.getElementById('codeText').hidden = true;
+    }
+
+}

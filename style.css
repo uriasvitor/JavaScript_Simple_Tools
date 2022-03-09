@@ -65,3 +65,7 @@ input[type="checkbox"]{
     font-size: 40px;
 }
 
+#codeText{
+    font-size: medium;
+    height: 50px;
+}
