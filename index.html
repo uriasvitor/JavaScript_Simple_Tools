@@ -16,11 +16,16 @@
               <input type="checkbox" id="Type" name="type"><br>
 
               <label for="Length">Show Length</label>
-              <input type="checkbox" id="Length" value="true" ame="Length" onclick="ShowLength()"><br>
+              <input type="checkbox" id="Length" value="true" name="Length" onclick="ShowLength()"><br>
 
-              <label for="Color">Show Color</label>
-              <input type="checkbox" value="true" id="Color" name="Color"><br>
-
+              <div class="colors">
+                <label for="Color">Show Color</label>
+                <input type="checkbox" value="true" id="Color" name="Color" onclick="ShowColor()"><br>
+                  <div class="box">   
+                    <input type="text" id="ColorBox">
+                  </div>
+              </div>
+              
               <label for="Code">Show Code</label>
               <input type="checkbox" id="Code" name="Code"><br>
 
@@ -28,14 +33,14 @@
               <input type="checkbox" id="Code" name="Code"><br>
 
             </div>
-            <div class="column" style="background-color:#bbb;">
+            <div class="column" style="background-color:rgb(0, 0, 0);">
               <h2>Write Here</h2>
-              <input type="text" id="area">
+              <textarea id="area"></textarea>
             </div>
             <div class="column" style="background-color:#ccc;">
               <h2>Result</h2>
-              <div class="column" style="background-color:rgb(0, 0, 0); height:200px; width: 600px;">
-                <p id="results">WORKS!</p>
+              <div class="column" style="background-color:rgb(0, 0, 0); height:200px; width: 550px;">
+                <p id="results"></p>
               </div>
               
             </div>

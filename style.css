@@ -7,7 +7,7 @@
     width: 33.33%;
     padding: 10px;
     height: 800PX;
-    background-color:#aaa;
+    background-color:rgb(255, 255, 255);
 }
 
 .row:after {
@@ -16,13 +16,40 @@
     clear: both;
   }
 
-#area{
-    font-size: 30px;
-    height: 200px;
-    width: 600px;
+textarea{
+    font-size: 50px;
+    height: 500px;
+    width: 550px;
+    background-color: rgb(109, 0, 143);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(255, 238, 0);
 }
 
 p{
     font-size: 54px;
     color: rgb(0, 255, 0);
+}
+
+h2{
+    font-size: 54px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(255, 238, 0);
+}
+
+
+.square{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+}
+
+.box{
+    width: 300px;
+    background-color: rgb(104, 104, 104);
+}
+
+input{
+    background-color: rgb(109, 0, 143);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(255, 238, 0);
 }
