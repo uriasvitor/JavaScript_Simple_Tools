@@ -49,26 +49,28 @@ function ShowCode(){
 
 }
 
-document.getElementById('SplitInput').hidden = true;
-document.getElementById('SplitInput1').hidden = true;
-document.getElementById('SplitInput').addEventListener("input",ShowSplit);
+document.getElementById('sliceInput').hidden = true;
+document.getElementById('sliceInput1').hidden = true;
 
-function ShowSplit(){
+document.getElementById('sliceInput').addEventListener("change",ShowSlice);
+document.getElementById('sliceInput1').addEventListener("change",ShowSlice);
 
-    let turn = document.getElementById('Split');
+function ShowSlice(){
+
+    let turn = document.getElementById('slice');
 
     if(turn.checked){
         let areaValue = document.getElementById('area').value;
-        let SplitInputValue = document.getElementById('SplitInput').value;
-        let SplitInput1Value = document.getElementById('SplitInput1').value;
+        let sliceInputValue = document.getElementById('sliceInput').value;
+        let sliceInput1Value = document.getElementById('sliceInput1').value;
 
-        Split = areaValue.slice(SplitInputValue,SplitInput1Value)
+        slice = areaValue.slice(sliceInputValue,sliceInput1Value)
 
-        document.getElementById('results').innerHTML = Split;
-        document.getElementById('SplitInput').hidden = false;
-        document.getElementById('SplitInput1').hidden = false;
+        document.getElementById('results').innerHTML = slice;
+        document.getElementById('sliceInput').hidden = false;
+        document.getElementById('sliceInput1').hidden = false;
     }else{
-        document.getElementById('SplitInput1').hidden = true;
-        document.getElementById('SplitInput').hidden = true;
+        document.getElementById('sliceInput1').hidden = true;
+        document.getElementById('sliceInput').hidden = true;
     }
 }
