@@ -13,26 +13,25 @@ function ShowLength(){
         
     }else{
         document.getElementById('results').innerHTML = '';
-        console.log(turn.value)
     }
 }
+
+document.getElementById('ColorBoxInput').addEventListener("input",ShowColor);
+document.getElementById('ColorBoxInput').disabled = true;
 
 function ShowColor(){
      let turn = document.getElementById('Color');
     
     if(turn.checked){
-        let textArea = document.getElementById('area').value;
-        let length = textArea.length;
-        alert("asodoas")
+        document.getElementById('ColorBoxInput').disabled = false;
+        let colorInput = document.getElementById('ColorBoxInput').value
+        document.getElementById('area').style.color = colorInput;
+        document.getElementById('ColorBoxInput').style.color = colorInput;
+        document.getElementById('ColorBoxInput').style.backgroundColor = "#6d008f";
 
-        document.getElementById('results').innerHTML = length;
-        
     }else{
-        document.getElementById('results').innerHTML = '';
-        console.log(turn.value)
+        document.getElementById('ColorBoxInput').disabled = true;
+        document.getElementById('ColorBoxInput').value = '';
+        document.getElementById('ColorBoxInput').style.backgroundColor = "#919191";
     }
-
-    let color = document.getElementById('area').value;
-    
-
 }

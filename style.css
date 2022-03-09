@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
 }
+body{
+    background-color:  rgb(109, 0, 143);
+}
 
+label{
+    font-size: 32px;
+}
 .column {
     float: left;
     width: 33.33%;
@@ -43,13 +49,19 @@ h2{
     background-color: rgb(0, 0, 0);
 }
 
-.box{
-    width: 300px;
-    background-color: rgb(104, 104, 104);
-}
 
 input{
-    background-color: rgb(109, 0, 143);
     text-shadow: 2px 2px rgb(0, 0, 0);
     color: rgb(255, 238, 0);
 }
+
+input[type="checkbox"]{
+    margin: 15px;
+    transform: scale(2.5)
+}
+
+#ColorBoxInput{
+    background-color: #919191;
+    font-size: 40px;
+}
+

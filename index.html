@@ -10,7 +10,7 @@
 <body>
     <form>
         <div class="row">
-            <div class="column" style="background-color:#aaa;">
+            <div class="column" style="background-color:#6f00ff;">
                 <h2>JavaScript Simple Tools</h2>
               <label for="Type">Show Type</label>
               <input type="checkbox" id="Type" name="type"><br>
@@ -20,10 +20,8 @@
 
               <div class="colors">
                 <label for="Color">Show Color</label>
-                <input type="checkbox" value="true" id="Color" name="Color" onclick="ShowColor()"><br>
-                  <div class="box">   
-                    <input type="text" id="ColorBox">
-                  </div>
+                <input type="checkbox" value="true" id="Color" name="Color" onclick="ShowColor()"><br> 
+                    <input type="text" id="ColorBoxInput" placeholder="Type a Name Color or hexa">
               </div>
               
               <label for="Code">Show Code</label>
@@ -33,11 +31,11 @@
               <input type="checkbox" id="Code" name="Code"><br>
 
             </div>
-            <div class="column" style="background-color:rgb(0, 0, 0);">
+            <div class="column" style="background-color:#000000;">
               <h2>Write Here</h2>
               <textarea id="area"></textarea>
             </div>
-            <div class="column" style="background-color:#ccc;">
+            <div class="column" style="background-color:#b700ff;">
               <h2>Result</h2>
               <div class="column" style="background-color:rgb(0, 0, 0); height:200px; width: 550px;">
                 <p id="results"></p>
