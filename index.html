@@ -12,9 +12,7 @@
         <div class="row">
             <div class="column" style="background-color:#6f00ff;">
                 <h2>JavaScript Simple Tools</h2>
-              <label for="Type">Show Type</label>
-              <input type="checkbox" id="Type" name="type"><br>
-
+    
               <label for="Length">Show Length</label>
               <input type="checkbox" id="Length" value="true" name="Length" onclick="ShowLength()"><br>
 
@@ -31,8 +29,12 @@
 
               <label for="Code">Show slice</label>
               <input type="checkbox" id="slice" name="slice" onclick="ShowSlice()"><br>
-              <input type="text" id="sliceInput">
-              <input type="text" id="sliceInput1">
+              <input type="text" id="sliceInput" placeholder="Start">
+              <input type="text" id="sliceInput1" placeholder="End">
+
+              <label for="Code">Show Position (Search)</label>
+              <input type="checkbox" id="Position" name="Position" onclick="ShowPosition()"><br>
+              <input type="text" id="PositionInput">
 
             </div>
             <div class="column" style="background-color:#000000;">
@@ -41,8 +43,9 @@
             </div>
             <div class="column" style="background-color:#b700ff;">
               <h2>Result</h2>
+              <div id="allresults">
                 <textarea id="results"></textarea>
-            </div>
+            </div></div>
           </div>
           
     </form>

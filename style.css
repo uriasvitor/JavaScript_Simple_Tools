@@ -55,8 +55,7 @@ h2{
 
 
 input{
-    text-shadow: 2px 2px rgb(0, 0, 0);
-    color: rgb(255, 238, 0);
+    color: rgb(0, 0, 0);
 }
 
 input[type="checkbox"]{
@@ -72,4 +71,8 @@ input[type="checkbox"]{
 #codeText{
     font-size: medium;
     height: 50px;
+}
+
+#sliceInput,#sliceInput1,#PositionInput{
+    font-size: 20px;
 }

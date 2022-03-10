@@ -3,7 +3,7 @@
 document.getElementById('area').addEventListener("input",ShowLength);
 
 function ShowLength(){
-    var turn = document.getElementById('Length');
+    let turn = document.getElementById('Length');
 
     if(turn.checked){
         let textArea = document.getElementById('area').value;
@@ -20,7 +20,7 @@ document.getElementById('ColorBoxInput').addEventListener("input",ShowColor);
 document.getElementById('ColorBoxInput').hidden = true;
 
 function ShowColor(){
-     let turn = document.getElementById('Color');
+    let turn = document.getElementById('Color');
     
     if(turn.checked){
         document.getElementById('ColorBoxInput').hidden = false;
@@ -72,5 +72,25 @@ function ShowSlice(){
     }else{
         document.getElementById('sliceInput1').hidden = true;
         document.getElementById('sliceInput').hidden = true;
+    }
+}
+
+document.getElementById('PositionInput').addEventListener("input",ShowPosition);
+document.getElementById('PositionInput').hidden = true;
+function ShowPosition(){
+
+    let turn = document.getElementById('Position');
+
+    if(turn.checked){
+        let areaValue = document.getElementById('area').value;
+        let positionInputValue = document.getElementById('PositionInput').value;
+
+        stringPosition = areaValue.search(positionInputValue)
+
+        document.getElementById('results').innerHTML = stringPosition;
+        document.getElementById('PositionInput').hidden = false;
+    }else{
+        document.getElementById('results').innerHTML = '';
+        document.getElementById('PositionInput').hidden = true;
     }
 }
